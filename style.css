@@ -4,14 +4,13 @@
   --ground:#7a7a7a;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
 body{
   display:flex;
   align-items:center;
   justify-content:center;
   background:var(--bg);
-  font-family:Inter,system-ui,Arial;
-  -webkit-font-smoothing:antialiased;
+  font-family:Arial, sans-serif;
+  height:100vh;
 }
 #game{
   position:relative;
@@ -19,9 +18,8 @@ body{
   height:200px;
   overflow:hidden;
   border-radius:8px;
-  background:linear-gradient(#fff,#eee);
+  background:#fff;
   box-shadow:0 6px 20px rgba(0,0,0,.08);
-  padding:16px;
 }
 #dino{
   position:absolute;
@@ -31,15 +29,6 @@ body{
   height:44px;
   background:var(--dino);
   border-radius:6px;
-  transform-origin:bottom center;
-}
-#dino.run{
-  animation: run-legs .24s steps(2) infinite;
-}
-@keyframes run-legs{
-  0%{transform:translateY(0)}
-  50%{transform:translateY(-2px)}
- 100%{transform:translateY(0)}
 }
 #ground{
   position:absolute;
@@ -67,23 +56,3 @@ body{
   border-radius:6px;
   font-family:monospace;
 }
-.overlay{
-  position:absolute;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.9));
-  font-weight:700;
-  color:#333;
-  gap:12px;
-  flex-direction:column;
-}
-button{
-  padding:8px 14px;
-  border-radius:6px;
-  border:0;
-  cursor:pointer;
-  box-shadow:0 2px 6px rgba(0,0,0,.08);
-}
-small{font-size:12px;color:#666}
