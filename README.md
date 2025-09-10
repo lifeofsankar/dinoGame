@@ -9,6 +9,6 @@ Google Chrome Dino Runner clone built with **HTML, CSS, and JavaScript**.
 ## Controls
 - Press `Space` or `↑` → Jump  
 - Press `R` → Restart  
-
+ Ok
 ---
 MIT License
